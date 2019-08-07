@@ -1,0 +1,22 @@
+body {
+    background-image: url('../image/air.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+div.container {
+    color: white;
+}
+
+div.column {
+    float: left;
+    width: 50%;
+}
+
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

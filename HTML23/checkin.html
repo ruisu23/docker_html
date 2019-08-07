@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DXC Airlines</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <img src="./image/logo.png" width="15%">
+                <a class="navbar-brand" href="index.html">DXC Airlines</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Check-In</a></li>
+                    <li><a href="boardingpass.html">Boarding Pass</a></li>
+                    <li><a href="where.html">Where to Board?</a></li>
+                    <li><a href="bags.html">Bags</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <h1>Check-In</h1><br>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="RN">Reference Number:</label>
+                    <input type="RN" class="form-control" id="RN" placeholder="Enter Reference Number" name="RN" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Last Name:</label>
+                    <input type="LN" class="form-control" id="LN" placeholder="Enter Last Name" name="LN" required>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Open modal
+                  </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title" align="center"><strong>Registered Flight</strong></h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" align="center">
+                    <h2><strong>QA 77</strong></h2>
+                    <p><strong>Registered Flight</strong></p>
+                    <p>__________________________________</p>
+                    <h2><strong>A5</strong></h2>
+                    <p><strong>Seating</strong></p>
+                    <p>__________________________________</p>
+                    <h2><strong>10/23/19</strong></h2>
+                    <p><strong>Date</strong></p>
+                    <p>__________________________________</p>
+                    <h2><strong>10:00 AM</strong></h2>
+                    <p><strong>Time</strong></p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Change Seats</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
