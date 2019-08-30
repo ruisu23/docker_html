@@ -3,7 +3,7 @@
 1. Update your OS
 2. install docker                 - $apt install docker.io -y
 3. Clone the repository           - $git clone https://github.com/ruisu23/testing.git
-4. Go to testing/HTML23 folder    - $cd testing/HTML23
+4. Go to docker_html/HTML23 folder    - $cd docker_html/HTML23
 
 *Make sure that the folder has the Dockerfile file in it*
 
